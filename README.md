@@ -1,4 +1,4 @@
-# Huge Navigation Exercise
+# Huge Navigation Exercise by Camilo Arenas
 
 ## Overview
 

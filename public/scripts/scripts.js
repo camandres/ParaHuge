@@ -1,9 +1,17 @@
+/*
+ *   Name: Menu Script for Huge
+ *   Author: Camilo Arenas
+ *	 Date: 18/08/2015
+ *   Comments:
+ *   -   This script will add the contents of the secondary items of the menu
+ */
 var url = "/api/nav.json",
     xmlhttp = new XMLHttpRequest;
 xmlhttp.open("GET", url, !0), xmlhttp.onreadystatechange = function() {
     if (4 == xmlhttp.readyState) {
         var e, t, l, a = JSON.parse(xmlhttp.responseText),
             n = "";
+			
         for (e = 0; e < a.items.length; e++)
             if (t = a.items[e], 0 == a.items[e].items.length) {
                 n += '<li><a href="' + t.url + '"><p>' + t.label + "</p></a></li>";
